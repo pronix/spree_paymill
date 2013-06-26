@@ -1,7 +1,7 @@
 Welcome to spree_paymill
 ========================
 
-This is a [SpreeCommerce](http://www.spreecommerce.com) extension for using the [Paymill](http://www.paymill.com) payment service. 
+This is a [SpreeCommerce](http://www.spreecommerce.com) extension for using the [Paymill](http://www.paymill.com) payment service.
 
 [![Code Climate](https://codeclimate.com/github/webionate/spree_paymill.png)](https://codeclimate.com/github/webionate/spree_paymill)
 [![Build Status](https://travis-ci.org/webionate/spree_paymill.png?branch=master)](https://travis-ci.org/webionate/spree_paymill)
@@ -10,6 +10,8 @@ Setup
 =====
 * Add spree_paymill to the Gemfile of your spree store
     `gem 'spree_paymill' , :git => 'git://github.com/webionate/spree_paymill.git'`
+    and missed gem paymill
+    `gem 'paymill', :git => 'https://github.com/pronix/paymill-ruby.git'`
 
 * Add stylesheets to your all.css manifest files
     *= require admin/spree_paymill
@@ -35,7 +37,7 @@ Setup
 
 NOTE
 ====
-spree_paymill is currently in a testing phase. It is already capable of handling payments and refunds via credit cards (MasterCard and Visa). Handling of debit cards currently isn't supported. Although we've tested spree_paymill on our systems, we currently don't guarantee, that it will work in your environment too. 
+spree_paymill is currently in a testing phase. It is already capable of handling payments and refunds via credit cards (MasterCard and Visa). Handling of debit cards currently isn't supported. Although we've tested spree_paymill on our systems, we currently don't guarantee, that it will work in your environment too.
 
 If you want to use spree_paymill in a production environment you'll have to contact Paymill to receive live keys.
 
